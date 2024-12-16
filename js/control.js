@@ -187,7 +187,7 @@ prueba.addEventListener("click", async (e) => {
         } else if (tipo === 1) {
             pdfArray.push(fetch('./cen_m.pdf').then(res => res.arrayBuffer()));
         } else if (tipo === 2) {
-            pdfArray.push(fetch('./cen_c.pdf').then(res => res.arrayBuffer()));
+            pdfArray.push(fetch('./cen_a.pdf').then(res => res.arrayBuffer()));
         }
     }
 
