@@ -200,7 +200,7 @@ prueba.addEventListener("click", async (e) => {
     const blob = new Blob([combinedPdfBytes], { type: 'application/pdf' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = 'combined.pdf';
+    link.download = 'recetario.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
