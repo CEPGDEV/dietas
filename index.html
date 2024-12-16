@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de dieta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" type="image/png" href="sources/dinner.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+        <h1>Generador de dietas con super alimentos</h1>
+        </div>
+        <div class="header-right">
+            <div class="separador"></div>
+            <div>
+                <p>Desarrollado por</p>
+                <p>CEPG studio</p>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+
+    <div class="form">
+        
+
+        <label for="costo">¿Cuanto deseas gastar por cada comida?</label>
+        <input type="number" name="costo" id="costo">
+
+        <label for="comidas">¿Qué comidas quieres?</label>
+        
+        <div class="comidas">
+
+        <div class="des">
+            <div class="cross"> <div class="cir"> <img src="sources/close (1).png"></div></div>
+            <div class="tick nada"> <div class="cir"> <img src="sources/check (1).png"></div> </div>
+            <label>Desayuno</label>
+        </div>
+
+        <div class="com">
+            <div class="cross"> <div class="cir"> <img src="sources/close (1).png"></div></div>
+            <div class="tick nada"> <div class="cir"> <img src="sources/check (1).png"></div></div>
+            <label>Comida</label>
+        </div>
+
+        <div class="cen">
+            <div class="cross"> <div class="cir"> <img src="sources/close (1).png"></div></div>
+            <div class="tick nada"> <div class="cir"> <img src="sources/check (1).png"></div></div>
+            <label>Cena</label>
+        </div>
+
+        </div>
+        
+        <div class="generar">
+        
+        <input type="submit" value="Generar menu" onclick="genM()" id="btnG">
+        </div>
+
+    </div>
+
+    <div class="nada" id="tabla">
+        <table id="menu">
+            <tr>
+                <th>Domingo</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+            </tr>
+        </table>
+    </div>
+
+    </div>
+    <script type="module" src="js/control.js"></script>
+</body>
+</html>
